@@ -1,13 +1,13 @@
 void main()
 {
   int? c=1;
-  print("Nhap mot so tu nhien");
+  print("Nhap mot so nguyen a ");
   int? a = int.parse(stdin.readLineSync()!);
-  print("Nhap luy thua");
+  print("Nhap luy thua ");
   int? b = int.parse(stdin.readLineSync()!);
  if(b==0)
     {
-        printf("luy thua mu %d cua %d la 1", b, a);
+        print("luy thua mu $b cua $a la 1");
         
     }
     else if(b>0)
@@ -16,18 +16,18 @@ void main()
         {
             c = c * a;
         }
-        printf("luy thua mu %d cua %d la : %d", b, a, c);
+        printf("luy thua mu $b  cua $a la $c ";
     }
     else if(b<0)
     {
-        if(a==0) { printf("luy thua mu %d cua 0 la 0", b);}
+        if(a==0) { print("luy thua mu $b cua $a la 0";}
         else if(a>=0)
         {
             for(int i=b; i<=-1; i++)
             {
                 c = c * a;
             }
-            printf("luy thua mu %d cua %d la : 1 / %d", b, a, c);
+            print("luy thua mu $b cua $a la : 1 / $c");
         }
         else if(a<0)
         {
@@ -35,7 +35,7 @@ void main()
             {
                 c = c * a;
             }
-            printf("luy thua mu %d cua %d la : - 1 / %d", b, a, c);
+            print("luy thua mu $b cua $a la : - 1 / $c");
         }
     }
   
